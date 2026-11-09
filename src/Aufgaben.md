@@ -8,7 +8,7 @@ Die Daten für die Erdbebenkarte stammen von der USGS-Webseite und bilden die Er
 
 Füge der App.jsx einen useState-Hook hinzu. Dieser soll als "Default Wert" ein leeres Objekt enthalten und später mit Erdbeben gefüllt werden. Hier wird der von der API bezogenen Datensatz im Frontend gespeichert.
 
-### 1.2 useEffect-Hook - GGf nur anpassen, Abhängigkeitsliste
+### 1.2 useEffect-Hook benutzen
 
 Der useEffect-Hook wird benutzt, damit die Anfrage an die API nur 1x erfolgt. Andernfalls würde bei jedem neuen Rendering (z.B. durch ein beliebiges State-Update in der App.jsx) eine weitere Anfrage gesendet werden.
 
@@ -108,7 +108,7 @@ Lege in der App.jsx zwei neue useState-Hooks an:
 
 ### 2.2 Interaktionselemente anlegen:
 
-Finde in der MUI-Referenz die "ButtonGroup"-Komponente. Sie besteht aus einer äusseren Komponente und mehreren Buttons. Übertrage den Beispielcode in die Header Komponente (als Kinder der `<Stack>`-Komponente) und passe diesen an. Jede der (fünf) Magnituden soll einen Button erhalten, der
+Finde in der MUI-Referenz die "ButtonGroup"-Komponente. Sie besteht aus einer äusseren Komponente und mehreren Buttons. Übertrage den Beispielcode in die **Header**-Komponente (als Kinder der `<Stack>`-Komponente) und passe diesen an. Jede der (fünf) Magnituden soll einen Button erhalten, der
 
 - den Text der Magnitude hat
 - einen onClick Handler besitzt, welcher die jeweilige Magnitude (als String) in State speichert.
