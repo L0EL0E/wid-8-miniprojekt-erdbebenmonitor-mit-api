@@ -169,6 +169,5 @@ const todos = ["a", "b", "c"]
 todos.map(todo, i) => <li key={i}>{todo}</li>
 }
 
-// Im Fall eines Buttons mit onClick-Handler würde dieser todo (="a", "b", "c"), als Argument an die setState-Funktion übergeben, um diese in State zu speichern.
-
 ```
+Anstatt von `<li>` nutzt du eine `<Button />` Komponente von MUI, anstatt von `<ol>` die ButtonGroup oder eine Stack-Komponente von MUI. Die "todos" wären in deinem Fall die Zeitintervalle und Magnituden. Im onClick-Event-Handler schreibst du den jeweiligen Wert in State. Verwende dazu die Variable (Parameter) deiner .map() Funktion (im Beispiel "todo" genannt - das ist der jeweilige Wert aus dem Array).
